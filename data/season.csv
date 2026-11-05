@@ -1,0 +1,619 @@
+team,season,day,boats,total,pct
+Mechanics,2024,0,0,165,0.0
+Mechanics,2024,1,0,165,0.0
+Mechanics,2024,2,0,165,0.0
+Mechanics,2024,3,0,165,0.0
+Mechanics,2024,4,0,165,0.0
+Mechanics,2024,5,0,165,0.0
+Mechanics,2024,6,0,165,0.0
+Mechanics,2024,7,0,165,0.0
+Mechanics,2024,8,0,165,0.0
+Mechanics,2024,9,0,165,0.0
+Mechanics,2024,10,0,165,0.0
+Mechanics,2024,11,0,165,0.0
+Mechanics,2024,12,0,165,0.0
+Mechanics,2024,13,0,165,0.0
+Mechanics,2024,14,0,165,0.0
+Mechanics,2024,15,0,165,0.0
+Mechanics,2024,16,0,165,0.0
+Mechanics,2024,17,0,165,0.0
+Mechanics,2024,18,0,165,0.0
+Mechanics,2024,19,0,165,0.0
+Mechanics,2024,20,0,165,0.0
+Mechanics,2024,21,0,165,0.0
+Mechanics,2024,22,0,165,0.0
+Mechanics,2024,23,0,165,0.0
+Mechanics,2024,24,0,165,0.0
+Mechanics,2024,25,0,165,0.0
+Mechanics,2024,26,0,165,0.0
+Mechanics,2024,27,0,165,0.0
+Mechanics,2024,28,0,165,0.0
+Mechanics,2024,29,0,165,0.0
+Mechanics,2024,30,0,165,0.0
+Mechanics,2024,31,0,165,0.0
+Mechanics,2024,32,0,165,0.0
+Mechanics,2024,33,1,165,0.6
+Mechanics,2024,34,1,165,0.6
+Mechanics,2024,35,1,165,0.6
+Mechanics,2024,36,1,165,0.6
+Mechanics,2024,37,1,165,0.6
+Mechanics,2024,38,2,165,1.2
+Mechanics,2024,39,5,165,3.0
+Mechanics,2024,40,8,165,4.8
+Mechanics,2024,41,8,165,4.8
+Mechanics,2024,42,8,165,4.8
+Mechanics,2024,43,11,165,6.7
+Mechanics,2024,44,13,165,7.9
+Mechanics,2024,45,16,165,9.7
+Mechanics,2024,46,18,165,10.9
+Mechanics,2024,47,20,165,12.1
+Mechanics,2024,48,20,165,12.1
+Mechanics,2024,49,20,165,12.1
+Mechanics,2024,50,21,165,12.7
+Mechanics,2024,51,23,165,13.9
+Mechanics,2024,52,26,165,15.8
+Mechanics,2024,53,29,165,17.6
+Mechanics,2024,54,32,165,19.4
+Mechanics,2024,55,32,165,19.4
+Mechanics,2024,56,32,165,19.4
+Mechanics,2024,57,34,165,20.6
+Mechanics,2024,58,36,165,21.8
+Mechanics,2024,59,36,165,21.8
+Mechanics,2024,60,39,165,23.6
+Mechanics,2024,61,42,165,25.5
+Mechanics,2024,62,42,165,25.5
+Mechanics,2024,63,42,165,25.5
+Mechanics,2024,64,42,165,25.5
+Mechanics,2024,65,44,165,26.7
+Mechanics,2024,66,47,165,28.5
+Mechanics,2024,67,52,165,31.5
+Mechanics,2024,68,56,165,33.9
+Mechanics,2024,69,56,165,33.9
+Mechanics,2024,70,56,165,33.9
+Mechanics,2024,71,58,165,35.2
+Mechanics,2024,72,59,165,35.8
+Mechanics,2024,73,61,165,37.0
+Mechanics,2024,74,63,165,38.2
+Mechanics,2024,75,68,165,41.2
+Mechanics,2024,76,68,165,41.2
+Mechanics,2024,77,68,165,41.2
+Mechanics,2024,78,70,165,42.4
+Mechanics,2024,79,73,165,44.2
+Mechanics,2024,80,75,165,45.5
+Mechanics,2024,81,80,165,48.5
+Mechanics,2024,82,90,165,54.5
+Mechanics,2024,83,90,165,54.5
+Mechanics,2024,84,90,165,54.5
+Mechanics,2024,85,94,165,57.0
+Mechanics,2024,86,97,165,58.8
+Mechanics,2024,87,103,165,62.4
+Mechanics,2024,88,103,165,62.4
+Mechanics,2024,89,103,165,62.4
+Mechanics,2024,90,103,165,62.4
+Mechanics,2024,91,103,165,62.4
+Mechanics,2024,92,107,165,64.8
+Mechanics,2024,93,109,165,66.1
+Mechanics,2024,94,111,165,67.3
+Mechanics,2024,95,112,165,67.9
+Mechanics,2024,96,122,165,73.9
+Mechanics,2024,97,122,165,73.9
+Mechanics,2024,98,122,165,73.9
+Mechanics,2024,99,136,165,82.4
+Mechanics,2024,100,138,165,83.6
+Mechanics,2024,101,139,165,84.2
+Mechanics,2024,102,142,165,86.1
+Mechanics,2024,103,145,165,87.9
+Mechanics,2024,104,146,165,88.5
+Mechanics,2024,105,149,165,90.3
+Mechanics,2024,106,150,165,90.9
+Mechanics,2024,107,153,165,92.7
+Mechanics,2024,108,159,165,96.4
+Mechanics,2024,109,162,165,98.2
+Mechanics,2024,110,163,165,98.8
+Mechanics,2024,111,163,165,98.8
+Mechanics,2024,112,163,165,98.8
+Mechanics,2024,113,164,165,99.4
+Mechanics,2024,114,164,165,99.4
+Mechanics,2024,115,164,165,99.4
+Mechanics,2024,116,164,165,99.4
+Mechanics,2024,117,164,165,99.4
+Mechanics,2024,118,164,165,99.4
+Mechanics,2024,119,164,165,99.4
+Mechanics,2024,120,165,165,100.0
+Mechanics,2024,121,165,165,100.0
+Mechanics,2025,0,0,183,0.0
+Mechanics,2025,1,0,183,0.0
+Mechanics,2025,2,0,183,0.0
+Mechanics,2025,3,0,183,0.0
+Mechanics,2025,4,0,183,0.0
+Mechanics,2025,5,0,183,0.0
+Mechanics,2025,6,0,183,0.0
+Mechanics,2025,7,0,183,0.0
+Mechanics,2025,8,0,183,0.0
+Mechanics,2025,9,0,183,0.0
+Mechanics,2025,10,0,183,0.0
+Mechanics,2025,11,0,183,0.0
+Mechanics,2025,12,0,183,0.0
+Mechanics,2025,13,0,183,0.0
+Mechanics,2025,14,0,183,0.0
+Mechanics,2025,15,0,183,0.0
+Mechanics,2025,16,0,183,0.0
+Mechanics,2025,17,0,183,0.0
+Mechanics,2025,18,0,183,0.0
+Mechanics,2025,19,0,183,0.0
+Mechanics,2025,20,0,183,0.0
+Mechanics,2025,21,1,183,0.5
+Mechanics,2025,22,2,183,1.1
+Mechanics,2025,23,4,183,2.2
+Mechanics,2025,24,5,183,2.7
+Mechanics,2025,25,6,183,3.3
+Mechanics,2025,26,6,183,3.3
+Mechanics,2025,27,6,183,3.3
+Mechanics,2025,28,6,183,3.3
+Mechanics,2025,29,8,183,4.4
+Mechanics,2025,30,9,183,4.9
+Mechanics,2025,31,9,183,4.9
+Mechanics,2025,32,9,183,4.9
+Mechanics,2025,33,9,183,4.9
+Mechanics,2025,34,9,183,4.9
+Mechanics,2025,35,10,183,5.5
+Mechanics,2025,36,13,183,7.1
+Mechanics,2025,37,13,183,7.1
+Mechanics,2025,38,15,183,8.2
+Mechanics,2025,39,15,183,8.2
+Mechanics,2025,40,15,183,8.2
+Mechanics,2025,41,15,183,8.2
+Mechanics,2025,42,15,183,8.2
+Mechanics,2025,43,16,183,8.7
+Mechanics,2025,44,19,183,10.4
+Mechanics,2025,45,22,183,12.0
+Mechanics,2025,46,24,183,13.1
+Mechanics,2025,47,24,183,13.1
+Mechanics,2025,48,24,183,13.1
+Mechanics,2025,49,24,183,13.1
+Mechanics,2025,50,25,183,13.7
+Mechanics,2025,51,28,183,15.3
+Mechanics,2025,52,36,183,19.7
+Mechanics,2025,53,41,183,22.4
+Mechanics,2025,54,41,183,22.4
+Mechanics,2025,55,41,183,22.4
+Mechanics,2025,56,44,183,24.0
+Mechanics,2025,57,47,183,25.7
+Mechanics,2025,58,52,183,28.4
+Mechanics,2025,59,56,183,30.6
+Mechanics,2025,60,61,183,33.3
+Mechanics,2025,61,61,183,33.3
+Mechanics,2025,62,61,183,33.3
+Mechanics,2025,63,63,183,34.4
+Mechanics,2025,64,65,183,35.5
+Mechanics,2025,65,68,183,37.2
+Mechanics,2025,66,72,183,39.3
+Mechanics,2025,67,75,183,41.0
+Mechanics,2025,68,75,183,41.0
+Mechanics,2025,69,75,183,41.0
+Mechanics,2025,70,77,183,42.1
+Mechanics,2025,71,80,183,43.7
+Mechanics,2025,72,86,183,47.0
+Mechanics,2025,73,96,183,52.5
+Mechanics,2025,74,102,183,55.7
+Mechanics,2025,75,104,183,56.8
+Mechanics,2025,76,104,183,56.8
+Mechanics,2025,77,106,183,57.9
+Mechanics,2025,78,110,183,60.1
+Mechanics,2025,79,112,183,61.2
+Mechanics,2025,80,124,183,67.8
+Mechanics,2025,81,128,183,69.9
+Mechanics,2025,82,130,183,71.0
+Mechanics,2025,83,130,183,71.0
+Mechanics,2025,84,132,183,72.1
+Mechanics,2025,85,136,183,74.3
+Mechanics,2025,86,139,183,76.0
+Mechanics,2025,87,139,183,76.0
+Mechanics,2025,88,139,183,76.0
+Mechanics,2025,89,139,183,76.0
+Mechanics,2025,90,139,183,76.0
+Mechanics,2025,91,141,183,77.0
+Mechanics,2025,92,141,183,77.0
+Mechanics,2025,93,144,183,78.7
+Mechanics,2025,94,148,183,80.9
+Mechanics,2025,95,148,183,80.9
+Mechanics,2025,96,148,183,80.9
+Mechanics,2025,97,148,183,80.9
+Mechanics,2025,98,150,183,82.0
+Mechanics,2025,99,153,183,83.6
+Mechanics,2025,100,156,183,85.2
+Mechanics,2025,101,161,183,88.0
+Mechanics,2025,102,164,183,89.6
+Mechanics,2025,103,164,183,89.6
+Mechanics,2025,104,164,183,89.6
+Mechanics,2025,105,165,183,90.2
+Mechanics,2025,106,168,183,91.8
+Mechanics,2025,107,170,183,92.9
+Mechanics,2025,108,176,183,96.2
+Mechanics,2025,109,179,183,97.8
+Mechanics,2025,110,179,183,97.8
+Mechanics,2025,111,179,183,97.8
+Mechanics,2025,112,182,183,99.5
+Mechanics,2025,113,182,183,99.5
+Mechanics,2025,114,182,183,99.5
+Mechanics,2025,115,182,183,99.5
+Mechanics,2025,116,182,183,99.5
+Mechanics,2025,117,182,183,99.5
+Mechanics,2025,118,182,183,99.5
+Mechanics,2025,119,183,183,100.0
+Mechanics,2025,120,183,183,100.0
+Mechanics,2025,121,183,183,100.0
+Shrink team,2024,0,0,144,0.0
+Shrink team,2024,1,0,144,0.0
+Shrink team,2024,2,0,144,0.0
+Shrink team,2024,3,0,144,0.0
+Shrink team,2024,4,0,144,0.0
+Shrink team,2024,5,0,144,0.0
+Shrink team,2024,6,0,144,0.0
+Shrink team,2024,7,0,144,0.0
+Shrink team,2024,8,1,144,0.7
+Shrink team,2024,9,1,144,0.7
+Shrink team,2024,10,1,144,0.7
+Shrink team,2024,11,1,144,0.7
+Shrink team,2024,12,1,144,0.7
+Shrink team,2024,13,1,144,0.7
+Shrink team,2024,14,1,144,0.7
+Shrink team,2024,15,1,144,0.7
+Shrink team,2024,16,1,144,0.7
+Shrink team,2024,17,1,144,0.7
+Shrink team,2024,18,1,144,0.7
+Shrink team,2024,19,1,144,0.7
+Shrink team,2024,20,1,144,0.7
+Shrink team,2024,21,1,144,0.7
+Shrink team,2024,22,1,144,0.7
+Shrink team,2024,23,1,144,0.7
+Shrink team,2024,24,1,144,0.7
+Shrink team,2024,25,1,144,0.7
+Shrink team,2024,26,1,144,0.7
+Shrink team,2024,27,1,144,0.7
+Shrink team,2024,28,1,144,0.7
+Shrink team,2024,29,1,144,0.7
+Shrink team,2024,30,1,144,0.7
+Shrink team,2024,31,1,144,0.7
+Shrink team,2024,32,1,144,0.7
+Shrink team,2024,33,1,144,0.7
+Shrink team,2024,34,1,144,0.7
+Shrink team,2024,35,1,144,0.7
+Shrink team,2024,36,1,144,0.7
+Shrink team,2024,37,1,144,0.7
+Shrink team,2024,38,3,144,2.1
+Shrink team,2024,39,4,144,2.8
+Shrink team,2024,40,7,144,4.9
+Shrink team,2024,41,7,144,4.9
+Shrink team,2024,42,7,144,4.9
+Shrink team,2024,43,7,144,4.9
+Shrink team,2024,44,10,144,6.9
+Shrink team,2024,45,14,144,9.7
+Shrink team,2024,46,16,144,11.1
+Shrink team,2024,47,17,144,11.8
+Shrink team,2024,48,21,144,14.6
+Shrink team,2024,49,21,144,14.6
+Shrink team,2024,50,23,144,16.0
+Shrink team,2024,51,28,144,19.4
+Shrink team,2024,52,28,144,19.4
+Shrink team,2024,53,31,144,21.5
+Shrink team,2024,54,33,144,22.9
+Shrink team,2024,55,33,144,22.9
+Shrink team,2024,56,33,144,22.9
+Shrink team,2024,57,36,144,25.0
+Shrink team,2024,58,39,144,27.1
+Shrink team,2024,59,40,144,27.8
+Shrink team,2024,60,43,144,29.9
+Shrink team,2024,61,45,144,31.2
+Shrink team,2024,62,45,144,31.2
+Shrink team,2024,63,45,144,31.2
+Shrink team,2024,64,48,144,33.3
+Shrink team,2024,65,49,144,34.0
+Shrink team,2024,66,50,144,34.7
+Shrink team,2024,67,53,144,36.8
+Shrink team,2024,68,55,144,38.2
+Shrink team,2024,69,55,144,38.2
+Shrink team,2024,70,55,144,38.2
+Shrink team,2024,71,58,144,40.3
+Shrink team,2024,72,60,144,41.7
+Shrink team,2024,73,63,144,43.8
+Shrink team,2024,74,66,144,45.8
+Shrink team,2024,75,68,144,47.2
+Shrink team,2024,76,68,144,47.2
+Shrink team,2024,77,68,144,47.2
+Shrink team,2024,78,72,144,50.0
+Shrink team,2024,79,73,144,50.7
+Shrink team,2024,80,76,144,52.8
+Shrink team,2024,81,78,144,54.2
+Shrink team,2024,82,78,144,54.2
+Shrink team,2024,83,78,144,54.2
+Shrink team,2024,84,78,144,54.2
+Shrink team,2024,85,83,144,57.6
+Shrink team,2024,86,87,144,60.4
+Shrink team,2024,87,88,144,61.1
+Shrink team,2024,88,88,144,61.1
+Shrink team,2024,89,88,144,61.1
+Shrink team,2024,90,88,144,61.1
+Shrink team,2024,91,88,144,61.1
+Shrink team,2024,92,92,144,63.9
+Shrink team,2024,93,95,144,66.0
+Shrink team,2024,94,98,144,68.1
+Shrink team,2024,95,100,144,69.4
+Shrink team,2024,96,102,144,70.8
+Shrink team,2024,97,102,144,70.8
+Shrink team,2024,98,102,144,70.8
+Shrink team,2024,99,108,144,75.0
+Shrink team,2024,100,111,144,77.1
+Shrink team,2024,101,115,144,79.9
+Shrink team,2024,102,117,144,81.2
+Shrink team,2024,103,122,144,84.7
+Shrink team,2024,104,122,144,84.7
+Shrink team,2024,105,122,144,84.7
+Shrink team,2024,106,128,144,88.9
+Shrink team,2024,107,131,144,91.0
+Shrink team,2024,108,135,144,93.8
+Shrink team,2024,109,135,144,93.8
+Shrink team,2024,110,137,144,95.1
+Shrink team,2024,111,137,144,95.1
+Shrink team,2024,112,137,144,95.1
+Shrink team,2024,113,141,144,97.9
+Shrink team,2024,114,142,144,98.6
+Shrink team,2024,115,142,144,98.6
+Shrink team,2024,116,142,144,98.6
+Shrink team,2024,117,143,144,99.3
+Shrink team,2024,118,143,144,99.3
+Shrink team,2024,119,143,144,99.3
+Shrink team,2024,120,144,144,100.0
+Shrink team,2024,121,144,144,100.0
+Shrink team,2025,0,0,133,0.0
+Shrink team,2025,1,0,133,0.0
+Shrink team,2025,2,0,133,0.0
+Shrink team,2025,3,0,133,0.0
+Shrink team,2025,4,0,133,0.0
+Shrink team,2025,5,0,133,0.0
+Shrink team,2025,6,0,133,0.0
+Shrink team,2025,7,0,133,0.0
+Shrink team,2025,8,0,133,0.0
+Shrink team,2025,9,0,133,0.0
+Shrink team,2025,10,0,133,0.0
+Shrink team,2025,11,0,133,0.0
+Shrink team,2025,12,0,133,0.0
+Shrink team,2025,13,0,133,0.0
+Shrink team,2025,14,0,133,0.0
+Shrink team,2025,15,0,133,0.0
+Shrink team,2025,16,0,133,0.0
+Shrink team,2025,17,0,133,0.0
+Shrink team,2025,18,0,133,0.0
+Shrink team,2025,19,0,133,0.0
+Shrink team,2025,20,0,133,0.0
+Shrink team,2025,21,0,133,0.0
+Shrink team,2025,22,1,133,0.8
+Shrink team,2025,23,1,133,0.8
+Shrink team,2025,24,3,133,2.3
+Shrink team,2025,25,4,133,3.0
+Shrink team,2025,26,4,133,3.0
+Shrink team,2025,27,4,133,3.0
+Shrink team,2025,28,4,133,3.0
+Shrink team,2025,29,5,133,3.8
+Shrink team,2025,30,5,133,3.8
+Shrink team,2025,31,6,133,4.5
+Shrink team,2025,32,6,133,4.5
+Shrink team,2025,33,6,133,4.5
+Shrink team,2025,34,6,133,4.5
+Shrink team,2025,35,6,133,4.5
+Shrink team,2025,36,9,133,6.8
+Shrink team,2025,37,9,133,6.8
+Shrink team,2025,38,11,133,8.3
+Shrink team,2025,39,14,133,10.5
+Shrink team,2025,40,14,133,10.5
+Shrink team,2025,41,14,133,10.5
+Shrink team,2025,42,14,133,10.5
+Shrink team,2025,43,14,133,10.5
+Shrink team,2025,44,14,133,10.5
+Shrink team,2025,45,15,133,11.3
+Shrink team,2025,46,17,133,12.8
+Shrink team,2025,47,17,133,12.8
+Shrink team,2025,48,17,133,12.8
+Shrink team,2025,49,17,133,12.8
+Shrink team,2025,50,20,133,15.0
+Shrink team,2025,51,21,133,15.8
+Shrink team,2025,52,23,133,17.3
+Shrink team,2025,53,25,133,18.8
+Shrink team,2025,54,25,133,18.8
+Shrink team,2025,55,25,133,18.8
+Shrink team,2025,56,30,133,22.6
+Shrink team,2025,57,31,133,23.3
+Shrink team,2025,58,32,133,24.1
+Shrink team,2025,59,33,133,24.8
+Shrink team,2025,60,35,133,26.3
+Shrink team,2025,61,35,133,26.3
+Shrink team,2025,62,35,133,26.3
+Shrink team,2025,63,36,133,27.1
+Shrink team,2025,64,37,133,27.8
+Shrink team,2025,65,42,133,31.6
+Shrink team,2025,66,48,133,36.1
+Shrink team,2025,67,53,133,39.8
+Shrink team,2025,68,53,133,39.8
+Shrink team,2025,69,53,133,39.8
+Shrink team,2025,70,54,133,40.6
+Shrink team,2025,71,54,133,40.6
+Shrink team,2025,72,55,133,41.4
+Shrink team,2025,73,57,133,42.9
+Shrink team,2025,74,59,133,44.4
+Shrink team,2025,75,61,133,45.9
+Shrink team,2025,76,61,133,45.9
+Shrink team,2025,77,61,133,45.9
+Shrink team,2025,78,62,133,46.6
+Shrink team,2025,79,64,133,48.1
+Shrink team,2025,80,70,133,52.6
+Shrink team,2025,81,72,133,54.1
+Shrink team,2025,82,72,133,54.1
+Shrink team,2025,83,72,133,54.1
+Shrink team,2025,84,74,133,55.6
+Shrink team,2025,85,80,133,60.2
+Shrink team,2025,86,85,133,63.9
+Shrink team,2025,87,85,133,63.9
+Shrink team,2025,88,85,133,63.9
+Shrink team,2025,89,85,133,63.9
+Shrink team,2025,90,85,133,63.9
+Shrink team,2025,91,85,133,63.9
+Shrink team,2025,92,88,133,66.2
+Shrink team,2025,93,90,133,67.7
+Shrink team,2025,94,92,133,69.2
+Shrink team,2025,95,93,133,69.9
+Shrink team,2025,96,93,133,69.9
+Shrink team,2025,97,93,133,69.9
+Shrink team,2025,98,94,133,70.7
+Shrink team,2025,99,98,133,73.7
+Shrink team,2025,100,101,133,75.9
+Shrink team,2025,101,102,133,76.7
+Shrink team,2025,102,103,133,77.4
+Shrink team,2025,103,103,133,77.4
+Shrink team,2025,104,103,133,77.4
+Shrink team,2025,105,105,133,78.9
+Shrink team,2025,106,112,133,84.2
+Shrink team,2025,107,112,133,84.2
+Shrink team,2025,108,117,133,88.0
+Shrink team,2025,109,119,133,89.5
+Shrink team,2025,110,119,133,89.5
+Shrink team,2025,111,119,133,89.5
+Shrink team,2025,112,119,133,89.5
+Shrink team,2025,113,125,133,94.0
+Shrink team,2025,114,126,133,94.7
+Shrink team,2025,115,126,133,94.7
+Shrink team,2025,116,126,133,94.7
+Shrink team,2025,117,126,133,94.7
+Shrink team,2025,118,126,133,94.7
+Shrink team,2025,119,127,133,95.5
+Shrink team,2025,120,127,133,95.5
+Shrink team,2025,121,133,133,100.0
+Mechanics,2026,0,0,146,0.0
+Mechanics,2026,1,0,146,0.0
+Mechanics,2026,2,0,146,0.0
+Mechanics,2026,3,0,146,0.0
+Mechanics,2026,4,0,146,0.0
+Mechanics,2026,5,0,146,0.0
+Mechanics,2026,6,0,146,0.0
+Mechanics,2026,7,0,146,0.0
+Mechanics,2026,8,0,146,0.0
+Mechanics,2026,9,0,146,0.0
+Mechanics,2026,10,0,146,0.0
+Mechanics,2026,11,0,146,0.0
+Mechanics,2026,12,0,146,0.0
+Mechanics,2026,13,0,146,0.0
+Mechanics,2026,14,0,146,0.0
+Mechanics,2026,15,0,146,0.0
+Mechanics,2026,16,0,146,0.0
+Mechanics,2026,17,0,146,0.0
+Mechanics,2026,18,0,146,0.0
+Mechanics,2026,19,0,146,0.0
+Mechanics,2026,20,0,146,0.0
+Mechanics,2026,21,0,146,0.0
+Mechanics,2026,22,0,146,0.0
+Mechanics,2026,23,0,146,0.0
+Mechanics,2026,24,0,146,0.0
+Mechanics,2026,25,0,146,0.0
+Mechanics,2026,26,0,146,0.0
+Mechanics,2026,27,0,146,0.0
+Mechanics,2026,28,0,146,0.0
+Mechanics,2026,29,0,146,0.0
+Mechanics,2026,30,0,146,0.0
+Mechanics,2026,31,0,146,0.0
+Mechanics,2026,32,0,146,0.0
+Mechanics,2026,33,0,146,0.0
+Mechanics,2026,34,0,146,0.0
+Mechanics,2026,35,0,146,0.0
+Mechanics,2026,36,0,146,0.0
+Mechanics,2026,37,0,146,0.0
+Mechanics,2026,38,0,146,0.0
+Mechanics,2026,39,0,146,0.0
+Mechanics,2026,40,0,146,0.0
+Mechanics,2026,41,0,146,0.0
+Mechanics,2026,42,2,146,1.4
+Mechanics,2026,43,2,146,1.4
+Mechanics,2026,44,3,146,2.1
+Mechanics,2026,45,4,146,2.7
+Mechanics,2026,46,4,146,2.7
+Mechanics,2026,47,4,146,2.7
+Mechanics,2026,48,11,146,7.5
+Mechanics,2026,49,14,146,9.6
+Mechanics,2026,50,14,146,9.6
+Mechanics,2026,51,24,146,16.4
+Mechanics,2026,52,26,146,17.8
+Mechanics,2026,53,26,146,17.8
+Mechanics,2026,54,26,146,17.8
+Mechanics,2026,55,29,146,19.9
+Mechanics,2026,56,31,146,21.2
+Mechanics,2026,57,33,146,22.6
+Mechanics,2026,58,34,146,23.3
+Mechanics,2026,59,35,146,24.0
+Mechanics,2026,60,35,146,24.0
+Mechanics,2026,61,35,146,24.0
+Mechanics,2026,62,35,146,24.0
+Mechanics,2026,63,37,146,25.3
+Shrink team,2026,0,0,155,0.0
+Shrink team,2026,1,0,155,0.0
+Shrink team,2026,2,0,155,0.0
+Shrink team,2026,3,0,155,0.0
+Shrink team,2026,4,0,155,0.0
+Shrink team,2026,5,0,155,0.0
+Shrink team,2026,6,0,155,0.0
+Shrink team,2026,7,0,155,0.0
+Shrink team,2026,8,0,155,0.0
+Shrink team,2026,9,0,155,0.0
+Shrink team,2026,10,0,155,0.0
+Shrink team,2026,11,0,155,0.0
+Shrink team,2026,12,0,155,0.0
+Shrink team,2026,13,0,155,0.0
+Shrink team,2026,14,0,155,0.0
+Shrink team,2026,15,0,155,0.0
+Shrink team,2026,16,0,155,0.0
+Shrink team,2026,17,0,155,0.0
+Shrink team,2026,18,0,155,0.0
+Shrink team,2026,19,0,155,0.0
+Shrink team,2026,20,0,155,0.0
+Shrink team,2026,21,0,155,0.0
+Shrink team,2026,22,0,155,0.0
+Shrink team,2026,23,0,155,0.0
+Shrink team,2026,24,0,155,0.0
+Shrink team,2026,25,0,155,0.0
+Shrink team,2026,26,0,155,0.0
+Shrink team,2026,27,0,155,0.0
+Shrink team,2026,28,0,155,0.0
+Shrink team,2026,29,0,155,0.0
+Shrink team,2026,30,0,155,0.0
+Shrink team,2026,31,0,155,0.0
+Shrink team,2026,32,0,155,0.0
+Shrink team,2026,33,0,155,0.0
+Shrink team,2026,34,0,155,0.0
+Shrink team,2026,35,0,155,0.0
+Shrink team,2026,36,0,155,0.0
+Shrink team,2026,37,0,155,0.0
+Shrink team,2026,38,0,155,0.0
+Shrink team,2026,39,0,155,0.0
+Shrink team,2026,40,0,155,0.0
+Shrink team,2026,41,1,155,0.6
+Shrink team,2026,42,3,155,1.9
+Shrink team,2026,43,3,155,1.9
+Shrink team,2026,44,3,155,1.9
+Shrink team,2026,45,3,155,1.9
+Shrink team,2026,46,3,155,1.9
+Shrink team,2026,47,3,155,1.9
+Shrink team,2026,48,4,155,2.6
+Shrink team,2026,49,4,155,2.6
+Shrink team,2026,50,5,155,3.2
+Shrink team,2026,51,9,155,5.8
+Shrink team,2026,52,10,155,6.5
+Shrink team,2026,53,10,155,6.5
+Shrink team,2026,54,10,155,6.5
+Shrink team,2026,55,12,155,7.7
+Shrink team,2026,56,14,155,9.0
+Shrink team,2026,57,17,155,11.0
+Shrink team,2026,58,20,155,12.9
+Shrink team,2026,59,21,155,13.5
+Shrink team,2026,60,21,155,13.5
+Shrink team,2026,61,21,155,13.5
+Shrink team,2026,62,23,155,14.8
+Shrink team,2026,63,23,155,14.8
+Mechanics,2026,64,44,146,30.1
+Shrink team,2026,64,30,155,19.4
