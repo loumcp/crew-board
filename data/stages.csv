@@ -1,10 +1,10 @@
 stage,boats,stage_order
-Awaiting DFS,33,1
-Backlog,48,2
-With techs,38,3
-To Shrink,14,4
-QA/Final Review,2,5
-To Bill,0,6
-Generating WW Estimate,16,7
-WW Estimate Out,1,8
-Done,25,9
+Awaiting DFS,24,1
+Backlog,55,2
+With techs,32,3
+To Shrink,20,4
+QA/Final Review,1,5
+To Bill,1,6
+Generating WW Estimate,19,7
+WW Estimate Out,3,8
+Done,22,9
