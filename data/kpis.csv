@@ -13,5 +13,8 @@ water_done,46
 water_total,108
 hauled_done,89
 hauled_total,160
+hauled_all,90
+hauled_nssc,1
+total_all,166
 parts_not_marked,16
 as_of,2026-11-10
