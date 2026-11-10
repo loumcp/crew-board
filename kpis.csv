@@ -11,10 +11,11 @@ mechanics_done,62
 shrink_done,35
 water_done,45
 water_total,107
-hauled_done,89
-hauled_total,159
-hauled_all,91
+hauled_done,90
+hauled_total,158
+hauled_all,92
 hauled_nssc,2
+nssc_total,6
 total_all,165
 parts_not_marked,17
 as_of,2026-11-10
