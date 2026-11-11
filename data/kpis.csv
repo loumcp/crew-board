@@ -3,7 +3,7 @@ ahead_of_shrink,124
 past_shrink,36
 parts_complete,71
 parts_incomplete,7
-hauled_ahead,29
+hauled_ahead,30
 open_cards,180
 ram_cards,14
 total_boats,160
@@ -11,11 +11,11 @@ mechanics_done,62
 shrink_done,36
 water_done,45
 water_total,107
-hauled_done,92
+hauled_done,93
 hauled_total,159
-hauled_all,94
+hauled_all,95
 hauled_nssc,2
 nssc_total,6
 total_all,166
 parts_not_marked,20
-as_of,2026-11-10
+as_of,2026-11-11
