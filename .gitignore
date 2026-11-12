@@ -1,0 +1,4 @@
+automation/state/placeholders.csv
+automation/state/location_exceptions.csv
+.work/
+__pycache__/
