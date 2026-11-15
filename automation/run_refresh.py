@@ -15,6 +15,7 @@ cmd = [sys.executable, str(A / "export_feed.py"), "--board", "nUn1lqjT", "--out"
 if os.environ.get("SNAPSHOT"): cmd += ["--snapshot", os.environ["SNAPSHOT"]]   # offline test only
 subprocess.run(cmd, check=True)
 feed = WORK / "feed" / "winterization_feed_latest.json"
+os.environ["INCLUDE_ARCHIVED_FILE"] = str(ST / "include_archived.txt")
 subprocess.run([sys.executable, str(A / "refresh_boards.py"), "--feed", str(feed), "--state", str(ST), "--out", str(WORK / "out")], check=True, stdout=subprocess.DEVNULL)
 out = WORK / "out"
 

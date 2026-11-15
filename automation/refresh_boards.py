@@ -28,7 +28,10 @@ AVG = 2502.4   # 2026 average billed per boat (office board)
 
 def load(feed):
     f = json.load(open(feed))
-    dec = [c for c in f["cards"] if not c["closed"] and "WO " in c["name"] and not ((isnssc(c)) or isram(c))]  # note cards without a WO are not boats
+    import os
+    inc = set(open(os.environ.get("INCLUDE_ARCHIVED_FILE", "state/include_archived.txt")).read().split()) if os.path.exists(os.environ.get("INCLUDE_ARCHIVED_FILE", "state/include_archived.txt")) else set()
+    # archived cards listed in include_archived.txt still count (archived by mistake, Lauren 11/15)
+    dec = [c for c in f["cards"] if (not c["closed"] or (re.search(r"WO (\d+)", c["name"]) and re.search(r"WO (\d+)", c["name"]).group(1) in inc)) and "WO " in c["name"] and not ((isnssc(c)) or isram(c))]  # note cards without a WO are not boats
     return f, dec
 
 
