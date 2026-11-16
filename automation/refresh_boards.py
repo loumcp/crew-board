@@ -107,16 +107,33 @@ def main():
         w.write("stage,boats,est_billable\n"); [w.write(f"{s},{pipe[s]},{round(pipe[s]*AVG)}\n") for s in ("To Shrink", "QA/Final Review")]
     end = today - timedelta(days=1)
     HOLIDAYS = {date(2026, 11, 26), date(2026, 11, 27), date(2026, 12, 24), date(2026, 12, 25), date(2027, 1, 1), date(2027, 1, 18)}  # days off; work is Mon-Fri
-    def pace(days, left):
-        # pace = boats a week over the last 4 weeks; finish date walks Mon-Fri working days, skipping HOLIDAYS
+    # crew availability: share of today's crew still working from a date on (equal share per person; edit as the crew changes)
+    # Tech's: 5 people (Butler, Roebuck, O'Leary, Doherty, Nick); Nick is out 12/20/2026 to 1/31/2027 -> 4 of 5.
+    # Shrink team's: 3 people (Edward, Roger, Patrick); Edward and Roger finish 12/18/2026 -> 1 of 3.
+    CREW = {"Tech's": [(date(2026, 12, 19), 4/5), (date(2027, 2, 1), 1.0)], "Shrink team's": [(date(2026, 12, 19), 1/3)]}
+    def share(team, d):
+        f = 1.0
+        for start, v in CREW.get(team, []):
+            if d >= start: f = v
+        return f
+    plan_rows = []
+    def pace(days, left, team):
+        # pace = boats a week over the last 4 weeks; finish date walks Mon-Fri working days, skipping HOLIDAYS, scaled by crew share
         ds = [date.fromisoformat(x) for x in days]; n = sum(1 for x in ds if end - timedelta(days=28) < x <= end); r = n / 4
         if not r: return r, ""
         d, rem = today, float(left)
         while rem > 0 and (d - today).days < 800:
-            if d.weekday() < 5 and d not in HOLIDAYS: rem -= r / 5
+            if d.weekday() < 5 and d not in HOLIDAYS:
+                g = r / 5 * share(team, d); rem -= g
+                wk = d - timedelta(days=d.weekday()); plan_rows.append((team, wk.isoformat(), g, max(rem, 0)))
             d += timedelta(days=1)
         return r, (d - timedelta(days=1)).isoformat()
-    tr, td = pace(arr, len(dec) - mech); sr, sdn = pace([d for d, _ in sd], len(dec) - shr)
+    tr, td = pace(arr, len(dec) - mech, "Tech's"); sr, sdn = pace([d for d, _ in sd], len(dec) - shr, "Shrink team's")
+    wk = {}
+    for t, w_, g, rem in plan_rows:
+        a = wk.setdefault((w_, t), [0, 0]); a[0] += g; a[1] = rem
+    with open(out / "crew_plan.csv", "w") as w:
+        w.write("week_of,team,boats_done_in_week,boats_left_at_week_end\n"); [w.write(f"{k[0]},{k[1]},{round(v[0], 1)},{round(v[1])}\n") for k, v in sorted(wk.items())]
     with open(out / "projfinish.csv", "w") as w:
         w.write("team,boats_left,per_week,projected_done\n"); w.write(f"Tech's,{len(dec)-mech},{tr:g},{td}\n"); w.write(f"Shrink team's,{len(dec)-shr},{sr:g},{sdn}\n")
     label = f"{today:%B} {today.day}"
