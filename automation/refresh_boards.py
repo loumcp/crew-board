@@ -108,9 +108,9 @@ def main():
     end = today - timedelta(days=1)
     HOLIDAYS = {date(2026, 11, 26), date(2026, 11, 27), date(2026, 12, 24), date(2026, 12, 25), date(2027, 1, 1), date(2027, 1, 18)}  # days off; work is Mon-Fri
     # crew availability: share of today's crew still working from a date on (equal share per person; edit as the crew changes)
-    # Tech's: 5 people (Butler, Roebuck, O'Leary, Doherty, Nick); Nick is out 12/20/2026 to 1/31/2027 -> 4 of 5.
+    # Tech's: 4 people (Butler, Roebuck, O'Leary, Nick Doherty = Nick, shop foreman). Nick is out 12/20/2026 to 1/31/2027. He logged about 6% of tech DECOM hours (28 of 449 since 10/5; foreman time is internal), so tech DECOM capacity is 0.94 without him.
     # Shrink team's: 3 people (Edward, Roger, Patrick); Edward and Roger finish 12/18/2026 -> 1 of 3.
-    CREW = {"Tech's": [(date(2026, 12, 19), 4/5), (date(2027, 2, 1), 1.0)], "Shrink team's": [(date(2026, 12, 19), 1/3)]}
+    CREW = {"Tech's": [(date(2026, 12, 19), 0.94), (date(2027, 2, 1), 1.0)], "Shrink team's": [(date(2026, 12, 19), 1/3)]}
     def share(team, d):
         f = 1.0
         for start, v in CREW.get(team, []):
