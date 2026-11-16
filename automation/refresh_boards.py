@@ -106,9 +106,16 @@ def main():
     with open(out / "pipeline.csv", "w") as w:
         w.write("stage,boats,est_billable\n"); [w.write(f"{s},{pipe[s]},{round(pipe[s]*AVG)}\n") for s in ("To Shrink", "QA/Final Review")]
     end = today - timedelta(days=1)
+    HOLIDAYS = {date(2026, 11, 26), date(2026, 11, 27), date(2026, 12, 24), date(2026, 12, 25), date(2027, 1, 1), date(2027, 1, 18)}  # days off; work is Mon-Fri
     def pace(days, left):
-        ds = [date.fromisoformat(x) for x in days]; n = sum(1 for x in ds if end - timedelta(days=14) < x <= end); r = n / 2
-        return r, (end + timedelta(days=round(left / r * 7))).isoformat() if r else ""
+        # pace = boats a week over the last 4 weeks; finish date walks Mon-Fri working days, skipping HOLIDAYS
+        ds = [date.fromisoformat(x) for x in days]; n = sum(1 for x in ds if end - timedelta(days=28) < x <= end); r = n / 4
+        if not r: return r, ""
+        d, rem = today, float(left)
+        while rem > 0 and (d - today).days < 800:
+            if d.weekday() < 5 and d not in HOLIDAYS: rem -= r / 5
+            d += timedelta(days=1)
+        return r, (d - timedelta(days=1)).isoformat()
     tr, td = pace(arr, len(dec) - mech); sr, sdn = pace([d for d, _ in sd], len(dec) - shr)
     with open(out / "projfinish.csv", "w") as w:
         w.write("team,boats_left,per_week,projected_done\n"); w.write(f"Tech's,{len(dec)-mech},{tr:g},{td}\n"); w.write(f"Shrink team's,{len(dec)-shr},{sr:g},{sdn}\n")
