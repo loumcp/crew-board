@@ -9,12 +9,12 @@ ram_cards,16
 total_boats,160
 mechanics_done,73
 shrink_done,47
-water_done,49
+water_done,45
 water_total,107
 hauled_done,98
 hauled_total,159
-hauled_all,101
-hauled_nssc,3
+hauled_all,102
+hauled_nssc,4
 nssc_total,8
 total_all,168
 parts_not_marked,18
