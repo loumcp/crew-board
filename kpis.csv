@@ -1,13 +1,13 @@
 metric,value
 ahead_of_shrink,113
 past_shrink,47
-parts_complete,69
+parts_complete,68
 parts_incomplete,0
-hauled_ahead,24
-open_cards,184
+hauled_ahead,23
+open_cards,185
 ram_cards,16
 total_boats,160
-mechanics_done,73
+mechanics_done,74
 shrink_done,47
 water_done,45
 water_total,107
@@ -15,7 +15,7 @@ hauled_done,98
 hauled_total,159
 hauled_all,102
 hauled_nssc,4
-nssc_total,8
-total_all,168
+nssc_total,9
+total_all,169
 parts_not_marked,18
 as_of,2026-11-17
