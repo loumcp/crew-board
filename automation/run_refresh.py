@@ -37,10 +37,11 @@ for fn in FILES:
     new = (out / fn).read_text()
     if not (ROOT / fn).exists() or (ROOT / fn).read_text() != new: changed = True
     (ROOT / fn).write_text(new); (ROOT / "data").mkdir(exist_ok=True); (ROOT / "data" / fn).write_text(new)
+now = datetime.now(ZoneInfo("America/New_York"))
+label = f"{now:%B} {now.day}, {now.hour % 12 or 12}:{now:%M} {now:%p}"
+# Always stamp the time of the last successful check, even when the data is unchanged.
+(ROOT / "updated.txt").write_text(label); (ROOT / "data" / "updated.txt").write_text(label)
 if changed:
-    now = datetime.now(ZoneInfo("America/New_York"))
-    label = f"{now:%B} {now.day}, {now.hour % 12 or 12}:{now:%M} {now:%p}"
-    (ROOT / "updated.txt").write_text(label); (ROOT / "data" / "updated.txt").write_text(label)
     shutil.copy(out / "season_base_next.csv", ST / "season_base.csv")
     (ST / "refresh_state.json").write_text(json.dumps({"label": label, "as_of": kp.get("as_of", "")}))
     print("Updated:", label, "| boats", total, "| mechanics done", kp["mechanics_done"], "| shrink done", kp["shrink_done"])
