@@ -1,6 +1,6 @@
 metric,value
-ahead_of_shrink,102
-past_shrink,58
+ahead_of_shrink,98
+past_shrink,62
 parts_complete,58
 parts_incomplete,0
 hauled_ahead,20
@@ -8,7 +8,7 @@ open_cards,185
 ram_cards,16
 total_boats,160
 mechanics_done,84
-shrink_done,58
+shrink_done,62
 water_done,60
 water_total,107
 hauled_done,104
