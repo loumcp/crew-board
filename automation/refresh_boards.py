@@ -73,6 +73,8 @@ def main():
     _fp = [x.strip() for x in (st / "fresh_pending.txt").read_text().splitlines() if x.strip()] if (st / "fresh_pending.txt").exists() else []
     wtot += sum(1 for c in dec if any(x.lower() in c["name"].lower() for x in _fp) and not any(o["code"] in FRESH for o in c["ops"]))
     wdone = sum(("FRESH WATER COMPLETE" in c["labels"]) and any(o["code"] in FRESH for o in c["ops"]) for c in dec)
+    # a listed placeholder boat counts as done when Lauren puts the FRESH WATER COMPLETE label on its card (11/24, Callen)
+    wdone += sum(1 for c in dec if "FRESH WATER COMPLETE" in c["labels"] and any(x.lower() in c["name"].lower() for x in _fp) and not any(o["code"] in FRESH for o in c["ops"]))
     ahead = [c for c in dec if c["list"] not in LM]
     k = dict(ahead_of_shrink=len(dec) + _ph_n - shr, past_shrink=shr,
              parts_complete=sum("Parts Kitted - Complete" in c["labels"] for c in ahead),
