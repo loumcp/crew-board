@@ -1,7 +1,8 @@
 name: Refresh crew board
 on:
   schedule:
-    - cron: "7,37 11-23 * * *"   # every 30 minutes, 6 AM to 6 PM Eastern (UTC-5 until March)
+    - cron: "3,23,43 10-19 * * *"   # every 20 minutes, 5:00 AM to 3:30 PM Eastern (UTC-5 until March)
+    - cron: "3,23 20 * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
