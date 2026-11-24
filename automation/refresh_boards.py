@@ -19,7 +19,8 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 LM = {"To Shrink", "QA/Final Review", "To Bill", "Done", "Generating WW Estimate", "WW Estimate Out"}
-LS = LM - {"To Shrink", "QA/Final Review"}   # QA/Final Review is not past shrink (Lauren 11/24)
+LS = LM - {"To Shrink"}
+SHRINK_OPS = {"1316", "1317", "1318", "1319", "1320"}   # shrink wrap by length + painted hulls/flybridge/mast (Lauren 11/24)
 TECH_LISTS = ["Roebuck", "Nick", "Butler", "O'Leary"]
 FRESH = {"1300", "1301", "1302", "1305"}
 SEASON_START = date(2026, 9, 1)
@@ -52,7 +53,10 @@ def main():
     with open(out / "stages.csv", "w") as w:
         w.write("stage,boats,stage_order\n"); [w.write(f"{s},{n},{i+1}\n") for i, (s, n) in enumerate(rows)]
     # kpis
-    mech = sum(c["list"] in LM for c in dec); shr = sum(c["list"] in LS for c in dec)
+    # Shrink complete (Lauren 11/24): every shrink op (1316-1320) on the card is checked off, whatever list the card is in. Boats with no shrink op are left out of the Shrink ring.
+    _sc = [c for c in dec if any(o["code"] in SHRINK_OPS for o in c["ops"])]
+    shr_ids = {c["id"] for c in _sc if all(o["done"] for o in c["ops"] if o["code"] in SHRINK_OPS)}
+    mech = sum(c["list"] in LM for c in dec); shr = len(shr_ids); shr_total = len(_sc)
     import csv as _csv
     _loc = {}
     if (st / "location_exceptions.csv").exists():
@@ -84,6 +88,7 @@ def main():
     # Billed ring (service writers, 11/20): boats whose DockMaster work order is billed and closed. Counts only, never dollars.
     # State files: billed_decom_wos.txt (billed work order numbers, from the billed report) and billed_as_of.txt (date of that report).
     _billed = set(open(st / "billed_decom_wos.txt").read().split()) if (st / "billed_decom_wos.txt").exists() else set()
+    k["shrink_total"] = shr_total
     k["billed_done"] = sum(_wo(c) in _billed for c in dec)
     k["billed_total"] = len(dec) + _ph_n
     k["billed_as_of"] = (st / "billed_as_of.txt").read_text().strip() if (st / "billed_as_of.txt").exists() else ""
@@ -96,7 +101,7 @@ def main():
         if m["card_id"] not in ids: continue
         day = datetime.fromisoformat(m["when"]).astimezone(ET).strftime("%Y-%m-%d"); cid = m["card_id"]
         if m["to"] in LM and m["from"] not in LM and cid not in sa: arr.append(day); sa.add(cid)
-        if m["to"] in LS and m["from"] not in LS and cid not in ss: sd.append((day, m["to"])); ss.add(cid)
+        if cid in shr_ids and m["to"] in LS and m["from"] not in LS and cid not in ss: sd.append((day, m["to"])); ss.add(cid)
     extra = json.load(open(st / "arrivals_extra.json")) if (st / "arrivals_extra.json").exists() else {}
     have = {wo_of[i] for i in sa}
     for wo, d in extra.items():
@@ -141,14 +146,14 @@ def main():
                 wk = d - timedelta(days=d.weekday()); plan_rows.append((team, wk.isoformat(), g, max(rem, 0)))
             d += timedelta(days=1)
         return r, (d - timedelta(days=1)).isoformat()
-    tr, td = pace(arr, len(dec) - mech, "Tech's"); sr, sdn = pace([d for d, _ in sd], len(dec) - shr, "Shrink team's")
+    tr, td = pace(arr, len(dec) - mech, "Tech's"); sr, sdn = pace([d for d, _ in sd], shr_total - shr, "Shrink team's")
     wk = {}
     for t, w_, g, rem in plan_rows:
         a = wk.setdefault((w_, t), [0, 0]); a[0] += g; a[1] = rem
     with open(out / "crew_plan.csv", "w") as w:
         w.write("week_of,team,boats_done_in_week,boats_left_at_week_end\n"); [w.write(f"{k[0]},{k[1]},{round(v[0], 1)},{round(v[1])}\n") for k, v in sorted(wk.items())]
     with open(out / "projfinish.csv", "w") as w:
-        w.write("team,boats_left,per_week,projected_done\n"); w.write(f"Tech's,{len(dec)-mech},{tr:g},{td}\n"); w.write(f"Shrink team's,{len(dec)-shr},{sr:g},{sdn}\n")
+        w.write("team,boats_left,per_week,projected_done\n"); w.write(f"Tech's,{len(dec)-mech},{tr:g},{td}\n"); w.write(f"Shrink team's,{shr_total-shr},{sr:g},{sdn}\n")
     label = f"{today:%B} {today.day}"
     prev = json.load(open(st / "refresh_state.json")) if (st / "refresh_state.json").exists() else {}
     man = dict(feed_generated=f["generated_et"], today=str(today), page_label_new=label, page_label_old=prev.get("label", ""), as_of_new=str(today), as_of_old=prev.get("as_of", ""), season_day=day,
