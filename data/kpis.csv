@@ -10,7 +10,7 @@ total_boats,160
 mechanics_done,89
 shrink_done,73
 water_done,94
-water_total,107
+water_total,108
 hauled_done,107
 hauled_total,159
 hauled_all,115
@@ -18,7 +18,7 @@ hauled_nssc,8
 nssc_total,9
 total_all,169
 parts_not_marked,17
-billed_done,53
+billed_done,62
 billed_total,160
-billed_as_of,2026-11-19
+billed_as_of,2026-11-23
 as_of,2026-11-24
