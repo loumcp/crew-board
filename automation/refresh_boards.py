@@ -32,6 +32,10 @@ def load(feed):
     inc = set(open(os.environ.get("INCLUDE_ARCHIVED_FILE", "state/include_archived.txt")).read().split()) if os.path.exists(os.environ.get("INCLUDE_ARCHIVED_FILE", "state/include_archived.txt")) else set()
     # archived cards listed in include_archived.txt still count (archived by mistake, Lauren 11/15)
     dec = [c for c in f["cards"] if (not c["closed"] or (re.search(r"WO (\d+)", c["name"]) and re.search(r"WO (\d+)", c["name"]).group(1) in inc)) and "WO " in c["name"] and not ((isnssc(c)) or isram(c))]  # note cards without a WO are not boats
+    # boats that cannot be done are left out of every count (Lauren 11/24: Paloma WO 507430 cannot be decommissioned); list the WO numbers in state/excluded_wos.txt
+    _ex = Path(os.environ.get("INCLUDE_ARCHIVED_FILE", "state/include_archived.txt")).parent / "excluded_wos.txt"
+    ex = set(_ex.read_text().split()) if _ex.exists() else set()
+    dec = [c for c in dec if not (re.search(r"WO (\d+)", c["name"]) and re.search(r"WO (\d+)", c["name"]).group(1) in ex)]
     return f, dec
 
 
@@ -74,6 +78,12 @@ def main():
              nssc_total=sum(isnssc(c) and not isram(c) for c in opn),
              total_all=len(dec) + _ph_n + sum(isnssc(c) and not isram(c) for c in opn))
     k["parts_not_marked"] = len(ahead) - k["parts_complete"] - k["parts_incomplete"]
+    # Billed ring (service writers, 11/20): boats whose DockMaster work order is billed and closed. Counts only, never dollars.
+    # State files: billed_decom_wos.txt (billed work order numbers, from the billed report) and billed_as_of.txt (date of that report).
+    _billed = set(open(st / "billed_decom_wos.txt").read().split()) if (st / "billed_decom_wos.txt").exists() else set()
+    k["billed_done"] = sum(_wo(c) in _billed for c in dec)
+    k["billed_total"] = len(dec) + _ph_n
+    k["billed_as_of"] = (st / "billed_as_of.txt").read_text().strip() if (st / "billed_as_of.txt").exists() else ""
     with open(out / "kpis.csv", "w") as w:
         w.write("metric,value\n"); [w.write(f"{m},{v}\n") for m, v in k.items()]; w.write(f"as_of,{today}\n")
     # arrivals / shrink finished, from the full move history (ET dates), first time only, DECOM cards on the board
