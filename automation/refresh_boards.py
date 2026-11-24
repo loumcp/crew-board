@@ -19,7 +19,7 @@ from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
 LM = {"To Shrink", "QA/Final Review", "To Bill", "Done", "Generating WW Estimate", "WW Estimate Out"}
-LS = LM - {"To Shrink"}
+LS = LM - {"To Shrink", "QA/Final Review"}   # QA/Final Review is not past shrink (Lauren 11/24)
 TECH_LISTS = ["Roebuck", "Nick", "Butler", "O'Leary"]
 FRESH = {"1300", "1301", "1302", "1305"}
 SEASON_START = date(2026, 9, 1)
