@@ -65,6 +65,9 @@ def main():
     _ph_n, _ph_h = len(_ph), sum(1 for r in _ph if r.get("hauled", "").upper().startswith("Y"))
     haul = sum(("Hauled" in c["labels"]) or c["list"] in LM | {"Hauled"} or _loc.get(_wo(c)) == "TRAILER" for c in hdec)
     wtot = sum(any(o["code"] in FRESH for o in c["ops"]) for c in dec)
+    # placeholder boats that will have fresh water ops once their work order exists (Lauren 11/24: Callen / Cobalt): listed in state/fresh_pending.txt, one card-title fragment per line. Counted in the Fresh water total, never as done. Once the real ops are on the card the normal rule counts it and this line can be deleted.
+    _fp = [x.strip() for x in (st / "fresh_pending.txt").read_text().splitlines() if x.strip()] if (st / "fresh_pending.txt").exists() else []
+    wtot += sum(1 for c in dec if any(x.lower() in c["name"].lower() for x in _fp) and not any(o["code"] in FRESH for o in c["ops"]))
     wdone = sum(("FRESH WATER COMPLETE" in c["labels"]) and any(o["code"] in FRESH for o in c["ops"]) for c in dec)
     ahead = [c for c in dec if c["list"] not in LM]
     k = dict(ahead_of_shrink=len(dec) + _ph_n - shr, past_shrink=shr,
